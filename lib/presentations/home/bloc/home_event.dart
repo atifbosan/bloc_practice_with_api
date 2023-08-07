@@ -6,6 +6,12 @@ class HomeCommentsLoadDataEvent extends HomeEvent {
   HomeCommentsLoadDataEvent();
 }
 
-class HomeCommentsLoadPageEvent extends HomeEvent {
-  HomeCommentsLoadPageEvent();
-}
+class HomeCommentsLoadPageEvent extends HomeEvent {}
+
+class HomeProductLoadPageEvent extends HomeEvent {}
+
+class HomeUsersEvent extends HomeEvent {}
+
+class HomePermissionEvent extends HomeEvent {}
+
+class HomePickImageEvent extends HomeEvent {}

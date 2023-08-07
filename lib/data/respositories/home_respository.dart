@@ -24,4 +24,16 @@ class HomeRepository {
         fullUrl: 'https://dummyjson.com/comments?skip=$page&limit=10');
     return data;
   }
+
+  getProducts({required int page}) async {
+    Map<String, dynamic>? data = await apiProvider.baseGetAPI(null, false,
+        fullUrl: 'https://dummyjson.com/products?skip=$page&limit=10');
+    return data;
+  }
+
+  getUsers({required int page}) async {
+    Map<String, dynamic>? data = await apiProvider.baseGetAPI(null, false,
+        fullUrl: 'https://reqres.in/api/users?page=$page&per_page=10');
+    return data;
+  }
 }
